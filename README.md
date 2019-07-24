@@ -5,6 +5,7 @@
 ### Feedback phase 
 无
 
+# GA-method
 ### Check phase
 使用 DQN , GA发现算法收敛到500分左右，此时检查解发现最好的解应该是[[0,1],[1,0],[0,1],[1,0],[1,1]],用[0,1]交替的方法能够在这个阶段达到520分左右，在以[[0,1],[1,0],[0,1],[1,0],[1,1]]，[[1,0],[0,1],[1,0],[0,1],[1,1]]为遗传算法的初始点，在小范围进行搜索后发现效果并没有提升.分析之后认为撒药和发蚊帐的操作都会产生类似抗药性的效果，在实际情况下需要将这两种操作交替使用。
  
@@ -49,7 +50,7 @@ def mutate(chromosome):
     return chromosome
 ```
 
-6. 同样为了接近check phase中得到的结果，我把cross操作修改成如下
+7. 同样为了接近check phase中得到的结果，我把cross操作修改成如下
 ```
 def crossover(a,b):
      
@@ -58,4 +59,20 @@ def crossover(a,b):
       return c
 ```
 
+# Q-learning Method
+To-do
 
+# 1000 Epoch Q-learning Method(can't submit as answer)
+To-do
+
+# Tricky submission
+
+## Policy
+[[0,1],[1,0],[0,1],[1,0],[1,1]]
+[[1,0],[0,1],[1,0],[0,1],[1,1]]
+
+## Code 
+see 0-1test.ipynb
+
+## Specific Statement
+To-do
